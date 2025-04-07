@@ -1,0 +1,258 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(139 0, 0);
+}
+
+.page_title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.page_title img {
+    width: 90%;
+    max-width: 600px;
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.music_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb6c1;
+    width: 90%;
+    padding: 10px 0px;
+    max-width: 400px;
+    height: 110px;
+    border-radius: 20px;
+    border: #000 solid 3px;
+}
+
+.music_img {
+    margin-left: 10px;
+}
+
+.music_img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.spotify {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.spotify_music {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 90px;
+    margin-right: 10px;
+}
+
+.spotify_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-top: 15px;
+    width: 170px;
+}
+
+.spotify_music_name {
+    font-weight: bold;
+}
+
+.spotify_artist_name {
+    font-size: 10px;
+    color: #404040;
+}
+
+.spotify_music img {
+    width: 30px;
+    height: 30px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #ffb6c1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel {
+    box-shadow: 2px 2px 4px #000;
+    overflow: hidden;
+    height: 400px;
+    width: 300px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.slider img {
+    object-fit: cover;
+    height: 400px;
+    width: 300px;
+}
+
+.first_kiss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.timer_title {
+    color: #fffaf0;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.timer {
+    color: #fffaf0;
+    margin-bottom: 10px;
+}
+
+.line {
+    border-bottom: #ffb6c1 2px solid;
+    width: 800px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cute_text {
+    color: #fffaf0;
+    font-size: 17px;
+    text-align: center;
+    width: 90%;
+    max-width: 750px;
+    margin-bottom: 30px;
+}
+
+
+
+@media (max-width: 768px) {
+    .music_container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .music_img img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .spotify_music {
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        margin-right: 0;
+    }
+
+    .spotify_title {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .spotify_music_name {
+        font-size: 14px;
+    }
+
+    .spotify_artist_name {
+        font-size: 8px;
+    }
+
+    .container {
+        padding: 0 10px; /* Adiciona espaçamento interno para evitar que o conteúdo encoste nas bordas */
+        width: 100%; /* Garante que o container ocupe toda a largura da tela */
+        overflow-x: hidden; /* Remove a rolagem horizontal */
+    }
+
+    .carousel {
+        height: auto; 
+    }
+
+    .slider img {
+        width: 100%; /* Faz as imagens do carrossel ocuparem toda a largura disponível */
+        height: auto; /* Mantém a proporção das imagens */
+    }
+
+    .line {
+        width: 90%; /* Ajusta a largura da linha para caber na tela */
+        max-width: 100%; /* Remove o limite de largura */
+    }
+
+    .cute_text {
+        width: 95%; /* Garante que o texto ocupe toda a largura disponível */
+        max-width: 500px; /* Remove o limite de largura */
+        text-align: center; /* Ajusta o alinhamento para melhorar a leitura */
+        padding: 0 10px; /* Adiciona espaçamento interno */
+    }
+}
+
+
+@media (max-width: 480px) {
+    .music_container {
+        padding: 10px;
+    }
+
+    .music_img img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .spotify_music_name {
+        font-size: 12px;
+    }
+
+    .spotify_artist_name {
+        font-size: 7px;
+    }
+
+    .spotify_title {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 0 5px; /* Reduz o espaçamento interno para telas muito pequenas */
+    }
+
+    .carousel {
+        height: auto; /* Permite que a altura do carrossel seja ajustada automaticamente */
+    }
+
+    .slider img {
+        width: 100%; /* Garante que as imagens ocupem toda a largura */
+        height: auto; /* Mantém a proporção */
+    }
+
+    .cute_text {
+        font-size: 14px; /* Reduz o tamanho da fonte para melhorar a leitura em telas pequenas */
+    }
+}
