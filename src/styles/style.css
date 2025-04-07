@@ -195,9 +195,8 @@ audio::-webkit-media-controls-panel {
     }
 
     .container {
-        padding: 0 10px; /* Adiciona espaçamento interno para evitar que o conteúdo encoste nas bordas */
-        width: 100%; /* Garante que o container ocupe toda a largura da tela */
-        overflow-x: hidden; /* Remove a rolagem horizontal */
+        width: 100%; 
+        overflow-x: hidden; 
     }
 
     .carousel {
@@ -205,20 +204,20 @@ audio::-webkit-media-controls-panel {
     }
 
     .slider img {
-        width: 100%; /* Faz as imagens do carrossel ocuparem toda a largura disponível */
-        height: auto; /* Mantém a proporção das imagens */
+        width: 100%; 
+        height: auto; 
     }
 
     .line {
-        width: 90%; /* Ajusta a largura da linha para caber na tela */
-        max-width: 100%; /* Remove o limite de largura */
+        width: 90%; 
+        max-width: 100%; 
     }
 
     .cute_text {
-        width: 95%; /* Garante que o texto ocupe toda a largura disponível */
-        max-width: 500px; /* Remove o limite de largura */
-        text-align: center; /* Ajusta o alinhamento para melhorar a leitura */
-        padding: 0 10px; /* Adiciona espaçamento interno */
+        width: 95%; 
+        max-width: 500px; 
+        text-align: center; 
+        padding: 0 10px; 
     }
 }
 
@@ -246,19 +245,19 @@ audio::-webkit-media-controls-panel {
     }
 
     .container {
-        padding: 0 5px; /* Reduz o espaçamento interno para telas muito pequenas */
+        padding: 0 5px; 
     }
 
     .carousel {
-        height: auto; /* Permite que a altura do carrossel seja ajustada automaticamente */
+        height: auto; 
     }
 
     .slider img {
-        width: 100%; /* Garante que as imagens ocupem toda a largura */
-        height: auto; /* Mantém a proporção */
+        width: 100%;
+        height: auto;
     }
 
     .cute_text {
-        font-size: 14px; /* Reduz o tamanho da fonte para melhorar a leitura em telas pequenas */
+        font-size: 14px;
     }
 }
