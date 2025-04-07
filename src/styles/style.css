@@ -134,6 +134,7 @@ audio::-webkit-media-controls-panel {
 .timer {
     color: #fffaf0;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .line {
